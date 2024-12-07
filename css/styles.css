@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+#start-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Largura 100% da tela */
+  height: 100vh; /* Altura 100% da tela */
+  background-image: url("../img/fundo.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Garante que a imagem cubra toda a tela */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Garante que a tela de início fique acima do conteúdo do jogo */
+}
+
+button {
+  background-color: #e0f878;
+  color: #000;
+  font-family: 'Press Start 2P', cursive;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+  border-radius: 10px;
+}
+
+#imagemFundo {
+  border: 5px solid #e0f878;
+}
+
+#start-screen img {
+  max-width: 100%;
+  height: auto;
+}
+
+#start-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body {
+  flex-direction: column;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  color: #e0f878;
+  text-shadow: #000 2px 3px 2px;
+
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: #3abe41; */
+  background-image: url("../img/fundo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+p, a {
+  text-shadow: #fff 2px 3px 2px;
+  color: #000;
+  margin-top: 80px;
+  font-size: 10px;
+}
+
+canvas {
+  border: 5px solid #e0f878;
+}
